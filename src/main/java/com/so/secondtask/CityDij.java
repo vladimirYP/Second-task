@@ -113,10 +113,10 @@ public class CityDij {
     }
 
     /**
-     * This method returns the cost of the path to destiion city
+     * This method returns the cost of the path to destination city
      *
      * @param source - the source City
-     * @return cost of the path to destiion city 
+     * @return cost of the path to destination city 
      * or Integer.MAX_VALUE if the cost is unknown yet
      */
     private int getLowestCost(City destination) {
@@ -129,7 +129,7 @@ public class CityDij {
     }
 
 //     This method returns the path from the source to the selected target and
-//     -1 if no path exists
+//     -1 if the path doesn't exist
     public int getPath(City target) {
         LinkedList<City> path = new LinkedList<>();
         City step = target;
